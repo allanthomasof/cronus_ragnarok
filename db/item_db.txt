@@ -108,8 +108,8 @@
 604,Galho_Seco,Galho Seco,2,50,,50,,,,,0xFFFFFFFF,7,2,,,,,,{ monster "this",-1,-1,"--ja--",-1,1,""; },{},{}
 605,Analgésico,Analgésico,11,2000,,100,,,,,0xFFFFFFFF,7,2,,,,,,{ itemskill "SM_ENDURE",1; },{},{}
 606,Aloe_Vera,Aloe Vera,11,1500,,100,,,,,0xFFFFFFFF,7,2,,,,,,{ itemskill "SM_SELFPROVOKE",1; },{},{}
-607,Fruto_de_Yggdrasil,Fruto de Yggdrasil,0,5000,,300,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 100,100; },{},{}
-608,Semente_de_Yggdrasil,Semente de Yggdrasil,0,5000,,300,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 50,50; },{},{}
+607,Fruto_de_Yggdrasil,Fruto de Yggdrasil,0,5000,,30,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 100,100; },{},{}
+608,Semente_de_Yggdrasil,Semente de Yggdrasil,0,5000,,30,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 50,50; },{},{}
 609,Amuleto,Amuleto,2,100,,100,,,,,0xFFFFFFFF,7,2,,,,,,{},{},{}
 610,Folha_de_Yggdrasil,Folha de Yggdrasil,11,4000,,100,,,,,0xFFFFFFFF,7,2,,,,,,{ itemskill "ALL_RESURRECTION",1; },{},{}
 611,Lupa,Lupa,11,40,,50,,,,,0xFFFFFFFF,7,2,,,,,,{ itemskill "MC_IDENTIFY",1; },{},{}
