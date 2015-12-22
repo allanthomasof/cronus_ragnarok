@@ -1,0 +1,80 @@
+﻿//===== Cronus Script ======================================== 
+//= Feast Day Of Ramadan Idul Fitri Event
+//===== Por: ================================================= 
+//= $ephiroth
+//===== Versão Atual: ======================================== 
+//= 1.1
+//===== Compativél com: ===================================== 
+//= Cronus Version
+//===== Descrição: =========================================== 
+//= Info : Official idRO
+//= 2006/10/16: 1.0 Release and fully working. [$ephiroth]
+//= 1.1 Replaced effect numerics with constants. [Samuray22]
+//= 1.1a Traduzido [Evanio]
+//= 1.2b Revisado Script [Asus]
+//============================================================
+	
+prontera,146,92,3	script	Cellerb	58,{
+
+	show "[Equipe Idul Fitri]";
+	if((gettime(6)==10 && (gettime(5)==24 || gettime(5)==25))==0) {
+		show "Parabéns! Festejamos o dia do Ramadan Idul Fitri 1427 H.";
+		specialeffect EF_SANDMAN;
+		close;	
+	}
+	show "Yupii......^FF8800"+strcharinfo(0)+"^000000!!";
+	show "Primeiro dia do Idulfitri chegou.";
+	show "Vamos celebrar-lo.";
+	show "Vamos ter um evento especial hoje.";
+	next;
+	show "[Equipe Idul Fitri]";
+	show "Evento de hoje .....^009500Missão do Idul Fitri!^000000";
+	next;
+	show "[Equipe Idul Fitri]";
+	show "Se está interessado em acompanhar este evento, eu vou cozinha-lo para você.";
+	next;
+
+	switch(select("Entendido. Eu gosto disso!!","Depois.... Obrigado.")){
+	case 1:
+		show "[Equipe Idul Fitri]";
+		show "Eu tenho algo que possa lhe interessar.";
+		show "Eu vou precisar de todos os itens a seguir:";
+		show "^D5A500Ketupat Sayur Ingredientes :^000000";
+		show "^00B6FF~5 Ketupat, 5 Cenouras~,^000000";
+		show "^CC6633~5 Batatas Doces, 10 Carnes~,^000000";
+		show "^000088~2 Ervas Verdes, 5 Troncos~.^000000";
+		next;
+		show "[Equipe Idul Fitri]";
+		if ( (countitem(552)<5 || countitem(515)<5 ||countitem(516)<5 || countitem(517)<10 || countitem(511)<2 || countitem(905)<5) ) { 
+			show "Você não tem os itens que lhe pedi.";
+			show "Volte quando tiver todos os itens.";
+			close;
+		}
+		delitem 552,5;
+		delitem 515,5;
+		delitem 516,2;
+		delitem 517,10;
+		delitem 511,2;
+		delitem 905,5;
+		show "Vejo que está com todos os itens....";
+		show "Aguarde um momento, porfavor!!";
+		next;
+		show "^009500-Plupping snapping bubbling~^000000";
+		show "^009500-Clinking clingking~^000000";
+		show "^009500-Clang clang~^000000";
+		additem 583,1;
+		next;
+		show "[Equipe Idul Fitri]";
+		show "Agradecemos a sua participação neste evento especial.";
+		emotion e_thx;
+		close;
+
+	case 2:	
+		show "[Equipe Idul Fitri]";
+		show "Oh bem, talvez você participe do evento amanhã.";
+		emotion e_hmm;
+		close;
+	}
+}
+
+prontera	mapflag	fireworks

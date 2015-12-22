@@ -1,0 +1,12 @@
+
+22-05-2010 17:44:43: Iniciando o Servidor de Personagens...
+22-05-2010 17:44:43: Characters file not found: save/athena.txt.
+22-05-2010 17:44:43: Id for the next created character: 150000.
+22-05-2010 17:44:43: The char-server is ready (Server is listening on the port 6121).
+22-05-2010 17:44:44: WARNING: Server cannot save characters.
+
+22-05-2010 17:46:47: Iniciando o Servidor de Personagens...
+22-05-2010 17:46:47: mmo_char_init: No character found in save/athena.txt.
+22-05-2010 17:46:47: Id for the next created character: 150000.
+22-05-2010 17:46:47: The char-server is ready (Server is listening on the port 6121).
+22-05-2010 17:46:50: Map-Server 0 connected: 729 maps, from IP 192.168.2.2 port 5121. Map-server 0 loading complete.

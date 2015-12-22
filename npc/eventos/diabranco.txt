@@ -1,0 +1,113 @@
+﻿//===== Cronus Script ===========================================
+//= Script de Evento do Dia Branco
+//===== By: =====================================================
+//= Muad_Dib
+//===== Versão Atual: ===========================================
+//= 1.0c
+//===== Comentários Adicionais: =================================
+//= 1.0a [Muad_Dib]
+//= 1.0b Traduzido. [Tiu TuTs]
+//= 1.0c Revisado e Reestruturado. [RoM]
+//= 1.0d Revisado e Corrigidos erros de acentuação [TecnoCronus]
+//===============================================================
+
+alberta,188,64,4	script	Açucar	91,{
+	show "[Açúcar]";
+	show "Bem-vindo!";
+	show "Como são deliciosos os doces!";
+	show "Meu professor...";
+	show "o doceiro de ARUBERUTA.";
+	show "Há doces difíceis de se fazer.";
+	next;
+	show "[Açúcar]";
+	show "Isto foi dado por uma pessoa querida.";
+	show "Em troca do presente...";
+	show "sincero como a doçura";
+	show "de alguns presentes.";
+	next;
+	switch(select("Por favor me dê!","Eu não preciso disso.","O professor.")) {
+	case 1:
+		show "[Açúcar]";
+		show "Sim!";
+		show "Selecione no menu abaixo.";
+		show "Uma vez que existe um limitação,";
+		show "não escolha mais do que ^ff00005 unidades^000000.";
+		show "Qual vai querer?";
+		next;
+		switch(select("Bala","Bengala Doce","Biscoito de Gengibre")) {
+		case 1:
+			set .@maplePrice,3000;
+			set .@mapleItemID,529;
+			break;
+		case 2:
+			set .@maplePrice,4000;
+			set .@mapleItemID,530;
+			break;
+		case 3:
+			set .@maplePrice,2000;
+			set .@mapleItemID,538; 
+			break;
+		}
+		show "[Açúcar]";
+		show "O preço é de";
+		show .@maplePrice + " Zeny cada.";
+		show "Quantos você deseja comprar?";
+		next;
+		input .@maplenum;
+		if (.@maplenum > 5) {
+			show "[Açúcar]";
+			show "???";
+			show "você parece ser surdo.";
+			show "Vou lhe dizer mais uma vez!";
+			show "você só pode comprar";
+			show "^ff00005^000000 de cada vez.";
+			close;
+		}
+		if (.@maplenum <= 0) {
+			show "[Açúcar]";
+			show "Realmente... você pode recusar...";
+			show "Se você mudar de idéia,";
+			show "estarei aqui.";
+			show "Tenha um bom dia!";
+			close;
+		}
+		set .@maplePriceT,.@maplePrice*.@maplenum;
+		if (Zeny < .@maplePriceT) {
+			show "[Açúcar]";
+			show "???";
+			show "Hmm me parece que você não tem dinheiro";
+			show "suficiente para fazer a compra.";
+			show "Vou lhe pedir para que verifique seu dinheiro.";
+			close;
+		}
+		set Zeny,Zeny-.@maplePriceT;
+		getitem .@mapleItemID,.@maplenum;
+		show "[Açúcar]";
+		show "Obrigado!!!";
+		show "Estes doces são realmente deliciosos.";
+		show "Uma vez que meu professor de doces é o Nº 1 do mundo!";
+		show "Embora você possa comer sozinho,";
+		show "não coma muito ou vai ficar gordo.";
+		show "Por favor, tome cuidado!!!";
+		close;
+	case 2:
+		show "[Açúcar]";
+		show "Realmente... você pode recusar...";
+		show "Se você mudar de idéia,";
+		show "estarei aqui.";
+		show "Tenha um bom dia!";
+		close;
+	case 3:
+		show "[Açúcar]";
+		show "Sim";
+		show "O meu professor é";
+		show "o Sr. Kuberu, um doceiro.";
+		show "Ele cria doces com duas pessoas";
+		show "que estão lá para aprender.";
+		next;
+		show "[Açúcar]";
+		show "Onde ele está agora?";
+		show "Eu não sei.";
+		close;
+	}
+}

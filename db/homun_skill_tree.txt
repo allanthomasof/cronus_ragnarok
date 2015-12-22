@@ -1,0 +1,84 @@
+// _________                                    
+// \_   ___ \_______  ____   ____  __ __  ______
+// /    \  \/\_  __ \/  _ \ /    \|  |  \/  ___/
+// \     \____|  | \(  <_> )   |  \  |  /\___ \ 
+//  \______  /|__|   \____/|___|  /____//____  >
+//         \/                   \/           \/  
+//
+// * Traduzido por Cronus Devel Team
+//  Árvore de Habilidade dos Homunculus
+//
+// Estrutura do Banco de dados:
+//CLass,Skill-ID,MaxLV,Prerequisite Skill-ID-1,Prerequisite Skill-ID-1-Lv,PrereqSkill-ID-2,PrereqSkill-ID-2-Lv,PrereqSkill-ID-3,PrereqSkill-ID-3-Lv,PrereqSkill-ID-4,PrereqSkill-ID-4-Lv,PrereqSkill-ID-5,PrereqSkill-ID-5-Lv//CLASS_SKILLNAME#Skill Name#
+//Lif
+6001,8001,5,0,0,0,0,0,0,0,0,0,0 //Cura pelas Mãos
+6001,8002,5,8001,3,0,0,0,0,0,0,0,0 //Bater em Retirada
+6001,8003,5,8001,5,0,0,0,0,0,0,0,0 //Cirurgia Cerebral
+//Amistr
+6002,8005,5,0,0,0,0,0,0,0,0,0,0 //Troca de Lugar
+6002,8006,5,8005,5,0,0,0,0,0,0,0,0 //Fortaleza
+6002,8007,5,8006,3,0,0,0,0,0,0,0,0 //Pele de Adamantium
+//Filir
+6003,8009,5,0,0,0,0,0,0,0,0,0,0 //Pica-Pau
+6003,8010,5,8009,3,0,0,0,0,0,0,0,0 //Vôo Frenético
+6003,8011,5,8010,3,0,0,0,0,0,0,0,0 //Vôo Acelerado
+//Vanilmirth
+6004,8013,5,0,0,0,0,0,0,0,0,0,0 //Capricho
+6004,8014,5,8013,3,0,0,0,0,0,0,0,0 //HVAN_CHAOTIC
+6004,8015,5,8013,5,0,0,0,0,0,0,0,0 //HVAN_INSTRUCT
+//Lif2
+6005,8001,5,0,0,0,0,0,0,0,0,0,0 //Cura pelas Mãos
+6005,8002,5,8001,3,0,0,0,0,0,0,0,0 //Bater em Retirada
+6005,8003,5,8001,5,0,0,0,0,0,0,0,0 //Cirurgia Cerebral
+//Amistr2
+6006,8005,5,0,0,0,0,0,0,0,0,0,0 //Troca de Lugar
+6006,8006,5,8005,5,0,0,0,0,0,0,0,0 //Fortaleza
+6006,8007,5,8006,3,0,0,0,0,0,0,0,0 //Pele de Adamantium
+//Filir2
+6007,8009,5,0,0,0,0,0,0,0,0,0,0 //Pica-Pau
+6007,8010,5,8009,3,0,0,0,0,0,0,0,0 //Vôo Frenético
+6007,8011,5,8010,3,0,0,0,0,0,0,0,0 //Vôo Acelerado
+//Vanilmirth2
+6008,8013,5,0,0,0,0,0,0,0,0,0,0 //Capricho,
+6008,8014,5,8013,3,0,0,0,0,0,0,0,0 //Bênção Caótica
+6008,8015,5,8013,5,0,0,0,0,0,0,0,0 //Mudança de Planos
+//Lif_H
+6009,8001,5,0,0,0,0,0,0,0,0,0,0 //Cura pelas Mãos
+6009,8002,5,8001,3,0,0,0,0,0,0,0,0 //Bater em Retirada
+6009,8003,5,8001,5,0,0,0,0,0,0,0,0 //Cirurgia Cerebral
+6009,8004,3,0,0,0,0,0,0,0,0,0,0 //Esforço Mental
+//Amistr_H
+6010,8005,5,0,0,0,0,0,0,0,0,0,0 //Troca de Lugar
+6010,8006,5,8005,5,0,0,0,0,0,0,0,0 //Fortaleza
+6010,8007,5,8006,3,0,0,0,0,0,0,0,0 //Pele de Adamantium
+6010,8008,3,0,0,0,0,0,0,0,0,0,0 //Sede de Sangue
+//Filir_H
+6011,8009,5,0,0,0,0,0,0,0,0,0,0 //Pica-Pau
+6011,8010,5,8009,3,0,0,0,0,0,0,0,0 //Vôo Frenético
+6011,8011,5,8010,3,0,0,0,0,0,0,0,0 //Vôo Acelerado
+6011,8012,3,0,0,0,0,0,0,0,0,0,0 //S.B.R.44
+//Vanilmirth_H
+6012,8013,5,0,0,0,0,0,0,0,0,0,0 //Capricho,
+6012,8014,5,8013,3,0,0,0,0,0,0,0,0 //Bênção Caótica
+6012,8015,5,8013,5,0,0,0,0,0,0,0,0 //Mudança de Planos
+6012,8016,3,0,0,0,0,0,0,0,0,0,0 //Autodestruição
+//Lif2_H
+6013,8001,5,0,0,0,0,0,0,0,0,0,0 //Cura pelas Mãos
+6013,8002,5,8001,3,0,0,0,0,0,0,0,0 //Bater em Retirada
+6013,8003,5,8001,5,0,0,0,0,0,0,0,0 //Cirurgia Cerebral
+6013,8004,3,0,0,0,0,0,0,0,0,0,0 //Esforço Mental
+//Amistr2_H
+6014,8005,5,0,0,0,0,0,0,0,0,0,0 //Troca de Lugar
+6014,8006,5,8005,5,0,0,0,0,0,0,0,0 //Fortaleza
+6014,8007,5,8006,3,0,0,0,0,0,0,0,0 //Pele de Adamantium
+6014,8008,3,0,0,0,0,0,0,0,0,0,0 //Sede de Sangue
+//Filir2_H
+6015,8009,5,0,0,0,0,0,0,0,0,0,0 //Pica-Pau
+6015,8010,5,8009,3,0,0,0,0,0,0,0,0 //Vôo Frenético
+6015,8011,5,8010,3,0,0,0,0,0,0,0,0 //Vôo Acelerado
+6015,8012,3,0,0,0,0,0,0,0,0,0,0 //S.B.R.44
+//Vanilmirth2_H
+6016,8013,5,0,0,0,0,0,0,0,0,0,0 //Capricho,
+6016,8014,5,8013,3,0,0,0,0,0,0,0,0 //Bênção Caótica
+6016,8015,5,8013,5,0,0,0,0,0,0,0,0 //Mudança de Planos
+6016,8016,3,0,0,0,0,0,0,0,0,0,0 //Autodestruição

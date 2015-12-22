@@ -1,0 +1,20 @@
+// _________                                    
+// \_   ___ \_______  ____   ____  __ __  ______
+// /    \  \/\_  __ \/  _ \ /    \|  |  \/  ___/
+// \     \____|  | \(  <_> )   |  \  |  /\___ \ 
+//  \______  /|__|   \____/|___|  /____//____  >
+//         \/                   \/           \/  
+//-----------------------------------------------
+// Cronus - Configuração dos GRFs
+//-----------------------------------------------
+// Nota: A leitura de GRFs é obsoleta e só é utilizada quando o mapcache está desativado/não funciona
+
+// GRF Original do Ragnarök
+// EX: C:\Arquivos de Programas\Gravity\Ragnarok Online\data.grf
+grf:
+
+// GRF Personalizada de seu Servidor
+grf: 
+
+// Diretório Data
+//data_dir: C:\Arquivos de Programas\Gravity\Ragnarok Online\

@@ -1,0 +1,107 @@
+//===== Cronus Script ========================================
+//= Quests de Izlude.
+//===== Por: ================================================= 
+//= SoulBlaker
+//===== Versão Atual: ======================================== 
+//= 1.1b
+//===== Compatibilidade: ===================================== 
+//= Cronus
+//===== Descrição: ===========================================
+//= [Aegis conversion]
+//= Vars em  uso: MISC_QUEST (Bit 16)
+//===== Comentários Adicional: =============================== 
+//= 1.0 Initial release [Evera]
+//= 1.1 Updated to 10.3 standard. [L0ne_W0lf]
+//= 1.1a Traduzido o npc baseado no bRO. [SoulBlaker]
+//= 1.1b Revisão do script, em conforme ao bRo [Asus]
+//============================================================
+
+// Edgar
+//============================================================
+izlude,182,186,2	script	Edgar#izlude	49,{
+	if (MISC_QUEST & 16) {
+		show "[Edgar]";
+		show "Então que ir para Alberta de novo? Vou cobrá-lo 250 Zenys como da última vez.";
+		show "Que tal?";
+		next;
+		if (select("Certo:Por que está sendo tão gentil comigo?") == 1) {
+			if (Zeny < 250) {
+				show "[Edgar]";
+				show "Você não tem dinheiro suficiente!";
+				show "Vá conseguir mais.";
+				close ;
+			}
+			set zeny,zeny-250;
+			warp "alberta",195,164;
+			end;
+		}
+		show "[Edgar]";
+		show "É apenas o meu jeito de ser. Isso, e seu sorriso malicioso me faz lembrar de meu amado filho de cabelos loiros, que saiu de casa há anos para virar um marinheiro em seu próprio barco. Abençoada seja sua alma, onde estiver.";
+		close;
+	}
+	show "[Edgar]";
+	show "Minha cidade, Izlude, está";
+	show "conectada a Alberta pelo";
+	show "ancoradouro a Oeste. Há muito";
+	show "tráfego entre as cidades, então eu";
+	show "quase sou de Alberta e não de Izlude. Hehehe.";
+	show "Eu conheço muito bem aquele sujeito";
+	show "Phelix de Alberta, aquele cara é";
+	show "muito exigente, então é sem almoço grátis com ele.";
+	next;
+	show "[Edgar]";
+	show "Mas ele é um cara legal, ele gosta";
+	show "de ajudar aos outros. Ele tem um";
+	show "grande coração, ele te ajudará";
+	show "bastante se você atender as";
+	show "condições que ele pede.";
+	next;
+	show "[Edgar]";
+	show "Ultimamente as pessoas de Alberta";
+	show "dizem que ele vem ajudando pessoas";
+	show "que lhe trazem uma grande";
+	show "quantidade de Jellopys ou algo";
+	show "parecido.. se vocês estiver com o";
+	show "bolso vazio, é melhor dar uma";
+	show "olhada no que ele quer.";
+	next;
+	if (select("Pode me dizer o caminho para Alberta?:Fim da conversa") == 1) {
+		show "[Edgar]";
+		show "Como? Você pode ir andando, mas se";
+		show "você tiver dinheiro eu sugiro que";
+		show "você pegue um barco.";
+		next;
+		if (select("Ok entendi.:Cansado de andar e sem dinheiro.") == 1 ) {
+			show "[Edgar]";
+			show "Tudo bem, cuide-se...";
+			close;
+		}
+		show "[Edgar]";
+		show "Cansado de andar e sem dinheiro?";
+		show "Meu amigo..";
+		show "Certo, certo, como capitão do navio";
+		show "eu posso te levar a um preço menor, 250 Zeny.";
+		next;
+		if (select("Legal!!!:Que extorsão!!") == 1) {
+			set MISC_QUEST,MISC_QUEST | 16;
+			if (Zeny < 250) {
+				show "[Edgar]";
+				show "Mas você não tem dinheiro o";
+				show "suficiente! Vá conseguir mais.";
+				close;
+			}
+			set zeny,zeny-250;
+			warp "alberta",195,164;
+			end;
+		}
+		show "[Edgar]";
+		show "Garoto, ah Garoto,";
+		show "se você acha melhor";
+		show "vá dar uma volta...";
+		close;
+	}
+	show "[Edgar]";
+	show "Yeah, tudo bem.";
+	show "Vejo você por aí~";
+	close;
+}

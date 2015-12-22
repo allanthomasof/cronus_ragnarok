@@ -1,0 +1,94 @@
+$top_70min	7
+$ET_AshID	6000
+$ET_GM	60
+$top_80min	8
+$top_ptmin	10
+$agit_hora_start	-1
+$agit_hora_end	-1
+$agit_hora_start_se	-1
+$agit_hora_end_se	-1
+$signbmps	1
+$ttranks	999999
+$top_50min	5
+$ET_Cooldown	583200
+$ET_Timelimit	14400
+$top_60min	6
+$ET_Minlevel	50
+$ET_Minparty	1
+$ninja_avail	2
+$agit_hora_start,5	-1
+$agit_hora_end,5	-1
+$agit_hora_start_se,5	-1
+$agit_hora_end_se,5	-1
+$agit_hora_start,3	-1
+$agit_hora_end,3	-1
+$agit_hora_start_se,3	-1
+$agit_hora_end_se,3	-1
+$agit_hora_start,1	-1
+$agit_hora_end,1	-1
+$agit_hora_start_se,1	-1
+$agit_hora_end_se,1	-1
+$agit_hora_start,6	16
+$agit_hora_end,6	18
+$agit_hora_start_se,6	-1
+$agit_hora_end_se,6	-1
+$agit_hora_start,4	21
+$agit_hora_end,4	23
+$agit_hora_start_se,4	-1
+$agit_hora_end_se,4	-1
+$agit_hora_start,2	21
+$agit_hora_end,2	23
+$agit_hora_start_se,2	-1
+$agit_hora_end_se,2	-1
+$ttnames$,11	Senorita Sylvia
+$guildmanager2$,11	Payon - Palácio do Lago Sagrado
+$guildmanager2$,20	Schwaltzvalt - Himinn
+$ttnames$	Breezy Havana
+$guildmanager2$	Al De Baran - Sirius
+$timezonestring$	^FF0000GMT -3^000000
+$week_days$	Domingo
+$guildmanager2$,29	Araunafeltz - Bandis
+$ttnames$,9	Breezy Havana
+$guildmanager2$,9	Geffen - Arima
+$guildmanager2$,18	Prontera - Skoegul
+$guildmanager2$,27	Araunafeltz - Horn
+$ttnames$,7	Breezy Havana
+$guildmanager2$,7	Geffen - Ruaden
+$guildmanager2$,16	Prontera - Hrist
+$guildmanager2$,25	Araunafeltz - Mardol
+$ttnames$,5	Kafra Jasmine
+$guildmanager2$,5	Geffen - Arsulf
+$week_days$,5	Sexta
+$guildmanager2$,14	Payon - Palácio da Colina
+$guildmanager2$,23	Schwaltzvalt - Hljod
+$ttnames$,3	Antonio
+$guildmanager2$,3	Al De Baran - Rigel
+$week_days$,3	Quarta
+$ttnames$,12	Joo Jahk
+$guildmanager2$,12	Payon - Palácio da Sombra
+$guildmanager2$,21	Schwaltzvalt - Andlangr
+$ttnames$,1	RS125
+$guildmanager2$,1	Al De Baran - Astrum
+$week_days$,1	Segunda
+$ttnames$,10	Nari
+$guildmanager2$,10	Payon - Palácio do Sol
+$guildmanager2$,19	Prontera - Gondul
+$guildmanager2$,28	Araunafeltz - Gefn
+$ttnames$,8	RS125
+$guildmanager2$,8	Geffen - Saffran
+$guildmanager2$,17	Prontera - Brynhildr
+$guildmanager2$,26	Araunafeltz - Cyr
+$ttnames$,6	Chris
+$guildmanager2$,6	Geffen - Trapesac
+$week_days$,6	Sábado
+$guildmanager2$,15	Prontera - Kriemhild
+$guildmanager2$,24	Schwaltzvalt - Skidbladnir
+$ttnames$,4	Aragham
+$guildmanager2$,4	Al De Baran - Acrux
+$week_days$,4	Quinta
+$ttnames$,13	RS125
+$guildmanager2$,13	Payon - Palácio Escarlate
+$guildmanager2$,22	Schwaltzvalt - Viblainn
+$ttnames$,2	Hollgrehenn
+$guildmanager2$,2	Al De Baran - Canopus
+$week_days$,2	Terça
